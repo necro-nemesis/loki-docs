@@ -1,15 +1,15 @@
-##Loki-Box Design Requirements
+## Loki-Box Design Requirements
 
-###Safety and Compliance
+### Safety and Compliance
 Meet or exceed the following
 UL/ULC/CSA/CE (power adapter)
 RoHS
 FCC
 
-##Software Compliance
+### Software Compliance
 Open Source GPL(TBD)
 
-##Minimum Hardware Specification
+### Minimum Hardware Specification
 Low consumer cost < $80 USD
 Low power < 3.2 amp
 Global mains voltage compatibility
@@ -22,13 +22,13 @@ Optional weatherized housing
 Strong community support
 Expectation of continued availability
 
-##Optional Hardware Specification
+### Optional Hardware Specification
 
 Weatherized housing
 Improved storage (eMMC, Sata)
 Alphanumeric display
 
-##Software Requirements
+### Software Requirements
 Linux based
 Webserver GUI control
 Version control
