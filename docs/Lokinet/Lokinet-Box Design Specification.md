@@ -15,6 +15,7 @@ Open Source GPL(TBD)
 ### Minimum Hardware Specification
 
 Low consumer cost < $80 USD
+
 Low power < 3.2 amp
 
 Global mains voltage compatibility
