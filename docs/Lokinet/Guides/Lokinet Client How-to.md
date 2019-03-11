@@ -94,7 +94,10 @@ execute WeeChat
      
 ### Add Lokinet server in WeeChat and connect
 
-    /server add lokinet 7okic5x5do3uh3usttnqz9ek3uuoemdrwzto1hciwim9f947or6y.loki 
+    /server add lokinet 7okic5x5do3uh3usttnqz9ek3uuoemdrwzto1hciwim9f947or6y.loki/6667
+    or
+    /server add lokinet mguttytrxawnsby144oaabsc4h45e393ykiyttyxwu6u6p156tny.loki/6667
+    
     /connect lokinet
     
 ### Join the channel
