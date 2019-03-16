@@ -50,9 +50,10 @@ Add the following below the existing text of the file
     
 Overwrite the file and exit
 
-    Ctrl O
+    Ctrl x
     y
-    Ctrl X
+    enter
+    
 exit out of root console
 
     exit
@@ -64,6 +65,10 @@ Genrate config file
 Grab the node info for bootstrap
 
     lokinet-bootstrap
+    
+    or use
+    
+    lokinet-bootstrap http://206.81.100.174/n-st-5.signed
     
 Elevate to root
 
