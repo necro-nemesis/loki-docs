@@ -14,7 +14,7 @@ Jeff's video is posted here https://youtu.be/pmssO185jKw and these steps follow 
 
 From your users home directory extract and install the dependencies to compile loki-network with the command:
 
-     sudo apt install build-essential cmake git libcap-dev wget rapidjson-dev
+     sudo apt install build-essential cmake git libcap-dev wget rapidjson-dev libuv1.dev
 
 Clone the loki-network repository
 
