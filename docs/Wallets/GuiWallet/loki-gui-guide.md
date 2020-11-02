@@ -1,52 +1,82 @@
-#Setup Guide on the Loki GUI Wallet
+title: Loki Documentation | Setup a Loki Wallet on Desktop.
+description: This document will tell you exactly how to set up and operate the Loki GUI wallet. Step by step guide for Windows, Mac and Linux inside.
+
+# Setup Guide on the Loki GUI Wallet
 
 This document will tell you exactly how to set up and operate the Loki GUI wallet.
-The latest version of the wallet can be downloaded [here](https://github.com/loki-project/loki-gui/releases).
+The latest version of the wallet can be downloaded [here](https://github.com/loki-project/loki-electron-gui-wallet/releases).
 
-**Windows users:** (**Mac and Linux users skip to step 6**)
+##**Windows** 
+> **Mac and Linux users skip to [step 1](#1-running-the-wallet-for-the-first-time).**
 
-1) Make sure Windows Defender (or other anti-virus software) is not flagging it. Add 'loki-gui-win...'  folder (or saved name of download) to exclusions in Windows Defender
+### Install Electron wallet and allow Defender permissions.
 
-![windows-defender-guide1](http://u.cubeupload.com/dabeatisgood/AV1.png)
+Open the executable file we downloaded from the Loki Github `Loki.Electron.Wallet.Setup.X.X.X-windows.exe` to start installion.
 
-![windows-defender-guide2](http://u.cubeupload.com/dabeatisgood/AV2.png)
+When installing the wallet the Windows Defender SmartScreen will prevent you from opening it unless you give the file permission. 
 
-![windows-defender-guide3](http://u.cubeupload.com/dabeatisgood/AV3.png)
+Click `Run anyway` to give the executable permission.
 
-2) After exclusion is added, check if `lokid.exe` is still in the folder. If it's not, unzip archive file once again and put files in the previously created folder
+<center>![Defender](../../assets/images/Defender.JPG)</center>
 
-![lokid-exe](http://u.cubeupload.com/meditations1/lokid.png)
+Now run through the installion prompts and then click install.
 
+Once the installation has finalised open the Loki Wallet by clicking your "Windows" key or the start menu and searching for `loki electron wallet`.
 
-3) Make sure that the path to your Loki folder doesn't contain non-latin characters.  
+## 1: Running the Wallet for the first time.
 
-4) Right click `loki-wallet-gui.exe` and select 'run as administrator'
+Once the installation has finalised open the Loki Wallet by clicking your "Windows" key or the start menu and searching for `loki electron wallet`.
 
-![loki-wallet-gui](http://u.cubeupload.com/meditations1/lokiwalletgui.png)
-  
-5) If it crashes after steps above are performed, run file named `start-low-graphics-mode.bat` in the loki folder
+Once opened the wallet will need to be configured. 
 
-![low-graphics-mode](http://u.cubeupload.com/meditations1/lowgraphicsmode.png)
+### 1.1: Choose your language.
 
-6) Select your language.
+<center>![Language selection](../../assets/images/electron2.JPG)</center>
 
-![language-select](http://u.cubeupload.com/meditations1/languageselect.png)
+### 1.2: Configure your settings.
 
-7) Select 'create a new wallet'
+Default settings are fine to use. 
 
-![create-new-wallet](http://u.cubeupload.com/meditations1/createnewwallet.png)
+> This is not required but if you would like to run your own node and broadcast your own transactions check the `Local + Remote Daemon` or the `Local Daemon Only` option.
 
-8) **This step is important! Please be careful to write down and save your seed exactly as you see on the screen and store it in a safe location.**
+Click `Next` when ready.
 
-![wallet-seed](http://u.cubeupload.com/meditations1/walletsetupseed.png)
+<center>![Configure Settings](../../assets/images/electron3.JPG)</center>
 
-9) Enter a strong password.
+## 2: Creating/importing Wallet.
 
-![enter-pass](http://u.cubeupload.com/meditations1/enterpass.png)
+Once your settings have been configured if you do not already have a wallet generated yet your screen will look like the following:
 
+<center>![Create New Wallet](../../assets/images/electron4.JPG)</center>
 
-10) If you have problems with syncing or connecting to the daemon, try to connect to a remote node (recommended):
+### 2.1: Creating new Wallet.
 
-Go to settings > go to node > select a remote node and click 'load preset' > scroll down and click 'connect'
+To create a new wallet click the `Create new wallet` button.
 
-![remote-node-pic](http://u.cubeupload.com/dabeatisgood/remotenode.png)
+Next fill in the input fields that are required. It is recommended but not required, however you should consider encrypting your key with an optional password. 
+
+Once input boxes are filled in click `CREATE WALLET` button.
+
+<center>![Create Wallet](../../assets/images/electron5.JPG)</center>
+
+### 2.2: Importing Wallet from seed.
+
+To import a wallet from seed click the `Restore wallet from seed` button.
+
+Next fill in the following input fields:
+
+- Wallet Name: Enter a name for your wallet.
+
+- Mnemonic Seed: Enter the seed phrase that was generated when intially creating your wallet.
+
+- Restore from Date: Enter the date or blockheight in which you want to restore your wallet from.
+
+> It is quicker to restore from the date in which you generated the wallet.
+
+- Password: Enter an optional password.
+
+- Confirm Password: Enter the same password to confirm spelling.
+
+Once input boxes are filled in click `RESTORE WALLET` button.
+
+<center>![Restore from seed](../../assets/images/electron6.JPG)</center>
